@@ -1,0 +1,35 @@
+/* src/components/NavBar.css */
+.navbar {
+    background-color: #0056b3; /* A nice blue, matching your existing h1 color */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* Pushes title to left, links to right */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Space between navbar and the main content */
+  }
+  
+  .navbar-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Space between links if you add more */
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #004085; /* Slightly darker blue on hover */
+  }
+  
+  /* Adjustments for general body padding if needed */
+  body {
+    margin: 0; /* Remove default body margin to let navbar go edge-to-edge */
+  }

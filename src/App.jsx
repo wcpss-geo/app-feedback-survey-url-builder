@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import './App.css';
+import NavBar from './components/NavBar.jsx';
 import surveyConfig from './config/surveyConfig';
 
 function App() {
@@ -67,9 +68,9 @@ function App() {
   };
 
   return (
+    <>
+    <NavBar />
     <div className="container">
-      <h1>OOGA App Feedback Survey URL Builder</h1>
-
       <p>
         Use this tool to generate a Survey123 link for the <a href={`${SURVEY_BASE_URL}/surveys/${SURVEY_ITEM_ID}/overview`}>OOGA Applications Feedback Form</a> hosted on AGOL.
       </p>
@@ -108,6 +109,7 @@ function App() {
 
       {toast.show && <div className="toast">{toast.message}</div>}
     </div>
+    </>
   );
 }
 
